@@ -1054,7 +1054,7 @@ body.ie ._ibg img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 63px;
+  height: 62px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1527,10 +1527,6 @@ body.ie ._ibg img {
     top: 14px;
   }
 
-  .contacts-header__label {
-    display: none;
-  }
-
   ._no-webp .contacts-header__phone{
     background: url("../img/icons/header/phone.png") 0 0 no-repeat; }
 
@@ -1557,6 +1553,12 @@ body.ie ._ibg img {
     -webkit-transform: scale(0.8);
         -ms-transform: scale(0.8);
             transform: scale(0.8);
+  }
+}
+
+@media (max-width: 639px) {
+  .contacts-header__label {
+    display: none;
   }
 }
 
