@@ -1,3 +1,15 @@
+
+let menuParents = document.querySelectorAll('.menu-page__parent');
+for (let index = 0; index < menuParents.length; index++) {
+	const menuParent = menuParents[index];
+	menuParent.addEventListener("mouseenter", function (e) {
+		menuParent.classList.add('_active');
+	});
+	menuParent.addEventListener("mouseleave", function (e) {
+		menuParent.classList.remove('_active');
+	});
+}
+
 function email_test(input) {
 	return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
 }
@@ -163,7 +175,6 @@ DynamicAdapt.prototype.arraySort = function (arr) {
 
 const da = new DynamicAdapt("max");
 da.init();
-
 var ua = window.navigator.userAgent;
 var msie = ua.indexOf("MSIE ");
 var isMobile = { Android: function () { return navigator.userAgent.match(/Android/i); }, BlackBerry: function () { return navigator.userAgent.match(/BlackBerry/i); }, iOS: function () { return navigator.userAgent.match(/iPhone|iPad|iPod/i); }, Opera: function () { return navigator.userAgent.match(/Opera Mini/i); }, Windows: function () { return navigator.userAgent.match(/IEMobile/i); }, any: function () { return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows()); } };
