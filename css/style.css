@@ -1275,9 +1275,9 @@ body.ie ._ibg img {
 
 .mainslider__dotts .swiper-pagination-bullet:after {
   opacity: 0;
-  -webkit-transition: opacity 0.3s ease 0s;
-  -o-transition: opacity 0.3s ease 0s;
-  transition: opacity 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
   color: #fff;
   font-size: 16px;
   font-weight: 900;
@@ -1300,13 +1300,7 @@ body.ie ._ibg img {
   content: counter(item);
 }
 
-.mainslider__dotts .swiper-pagination-bullet-active {
-  border: 0;
-}
-
 .mainslider__dotts .swiper-pagination-bullet-active:after {
-  border: 2px solid #fff;
-  border-radius: 50%;
   opacity: 1;
 }
 
