@@ -656,6 +656,8 @@ if (isMobile.any()) { //выезжающие ячейки из меню при �
 		menuParent.addEventListener("click", function (e) {
 			menuParent.parentElement.classList.toggle('_active');
 			e.preventDefault();
+			// в этом коде убирается нажатие у всех >а, теперь они
+			//не ведут себя как ссылки, а просто нажимаюся
 		});
 	}
 } else {
@@ -672,21 +674,25 @@ if (isMobile.any()) { //выезжающие ячейки из меню при �
 	}
 }
 
-
+//выкатывание бургера
 let menuPageBurger = document.querySelector('.menu-page__burger');
 let menuPageBody = document.querySelector('.menu-page__body');
 menuPageBurger.addEventListener("click", function (e) {
 	menuPageBurger.classList.toggle('_active');
 	_slideToggle(menuPageBody);
+	//_slideToggle делает выкатывание плавным
 });
-
+//выкатывание меню для поиска
 let searchTitle = document.querySelector('.search-page__title');
 let categoriesSearch = document.querySelector('.categories-search');
 searchTitle.addEventListener("click", function (e) {
 	searchTitle.classList.toggle('_active');
 	_slideToggle(categoriesSearch);
+	//_slideToggle делает выкатывание плавным
 });
 
+//выбор категорий поиска
+//когда нажимаешь на категорию, она выделяется, так как ей добавляется класс
 let checkboxCategories = document.querySelectorAll('.categories-search__checkbox');
 
 for (let index = 0; index < checkboxCategories.length; index++) {
