@@ -138,18 +138,59 @@ if (document.querySelector('.products-slider')) {
 		//preloadImages: false,
 		//lazy: true,
 		// Dotts
-		/*
-		pagination: {
-			el: '.mainslider__dotts',
-			clickable: true,
+		pagination: { //создает цифры для навигации "1/2" между стрелками слайдера
+			el: '.products-slider__info',
+			type: 'fraction'
 		},
-		*/
 		//Arrows
 		navigation: {
 			nextEl: '.products-slider__arrow_next',
 			prevEl: '.products-slider__arrow_prev',
 		},
 
+		on: {
+			lazyImageReady: function () {
+				ibg();
+			},
+		}
+	});
+}
+//слайдер с маленькими брендами снизу страницы
+if (document.querySelector('.brands-slider')) {
+	let productsSlider = new Swiper('.brands-slider__body', {
+		observer: true,
+		observeParents: true,
+		slidesPerView: 5,
+		spaceBetween: 0,
+		speed: 800,
+		loop: true,
+		//preloadImages: false,
+		//lazy: true,
+		//Arrows
+		navigation: {
+			nextEl: '.brands-slider__arrow_next',
+			prevEl: '.brands-slider__arrow_prev',
+		},
+		breakpoints: {
+			320: {
+				slidesPerView: 1,
+				spaceBetween: 0,
+				autoHeight: true,
+			},
+			480: {
+				slidesPerView: 2,
+			},
+			600: {
+				slidesPerView: 3,
+			},
+			768: {
+				slidesPerView: 4,
+
+			},
+			992: {
+				slidesPerView: 5,
+			},
+		},
 		on: {
 			lazyImageReady: function () {
 				ibg();
