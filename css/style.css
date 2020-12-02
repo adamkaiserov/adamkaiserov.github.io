@@ -2565,6 +2565,7 @@ body.ie ._ibg img {
     background: url("../img/footer/tel.png") left no-repeat; }
 
   .block-footer__phones {
+    margin: 0px 0px 10px 0px;
     padding: 0px 0px 0px 35px;
   }
 }
@@ -2655,6 +2656,7 @@ body.ie ._ibg img {
   }
 
   .footer__column {
+    margin: 0px 0px 10px 0px;
     padding: 0px 15px;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 50%;
@@ -2884,6 +2886,14 @@ body.ie ._ibg img {
   }
 }
 
+@media (max-width: 992px) {
+  .widgets-footer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 @media (max-width: 991.98px) {
   .select__title {
     font-size: 18px;
@@ -3013,6 +3023,11 @@ body.ie ._ibg img {
     -webkit-transform: scale(0.9);
         -ms-transform: scale(0.9);
             transform: scale(0.9);
+  }
+
+  .footer__payments {
+    margin: 0px 0px 30px 0px;
+    text-align: center;
   }
 
   .text-block__container {
@@ -3307,7 +3322,6 @@ body.ie ._ibg img {
   }
 
   .footer__payments {
-    text-align: center;
     margin: 0px 0px 10px 0px;
   }
 
