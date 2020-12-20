@@ -63,7 +63,7 @@ if (location.hash) {
 let iconMenu = document.querySelector(".icon-menu");
 if (iconMenu != null) {
 	let delay = 500;
-	let menuBody = document.querySelector(".menu__body");
+	let menuBody = document.querySelector(".menu__list");
 	iconMenu.addEventListener("click", function (e) {
 		if (unlock) {
 			body_lock(delay);
@@ -74,7 +74,7 @@ if (iconMenu != null) {
 };
 function menu_close() {
 	let iconMenu = document.querySelector(".icon-menu");
-	let menuBody = document.querySelector(".menu__body");
+	let menuBody = document.querySelector(".menu__list");
 	iconMenu.classList.remove("_active");
 	menuBody.classList.remove("_active");
 }
