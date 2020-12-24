@@ -1126,6 +1126,10 @@ body.ie ._ibg img {
   border-bottom: 1px solid #f2efe6;
 }
 
+.footer__logo {
+  padding: 15px 0px 0px 0px;
+}
+
 .footer__title {
   padding: 44px 0;
   font-weight: 600;
@@ -1880,6 +1884,18 @@ body.ie ._ibg img {
     max-width: 100%;
   }
 
+  .footer__bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    flex-direction: column-reverse;
+  }
+
+  .menu-footer__items {
+    padding: 25px 0px 0px 0px;
+  }
+
   .page__partner {
     padding: 70px 0 40px 0;
   }
@@ -2133,6 +2149,21 @@ body.ie ._ibg img {
   .body-header__title {
     font-size: 38px;
     line-height: 45px;
+  }
+
+  .footer__top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .footer__title {
+    padding: 10px 0 20px 0;
+  }
+
+  .footer__social {
+    padding: 13px 0 15px 0;
   }
 
   .page__production {
@@ -2474,6 +2505,18 @@ body.ie ._ibg img {
 }
 
 @media (max-width: 520px) {
+  .menu-footer__items {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .menu-footer__items li {
+    margin: 0px 5px 15px 5px;
+  }
+
   .page__download {
     padding: 80px 0 25px 0;
   }
