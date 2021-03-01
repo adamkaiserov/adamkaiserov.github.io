@@ -96,6 +96,27 @@ if (document.querySelector('.steps-page__slider')) {
 		slidesPerView: 1,
 		spaceBetween: 0,
 		speed: 800,
+		autoHeight: true,
+		breakpoints: {
+			320: {
+
+			},
+			768: {
+				autoHeight: true,
+			},
+			992: {
+				autoHeight: false,
+
+			},
+			1268: {
+
+			},
+		},
+		pagination: {
+			el: '.steps-page__pagination',
+			type: 'bullets',
+			clickable: true,
+		},
 		// Arrows
 		navigation: {
 			nextEl: '.steps-page__arrow_next',
