@@ -109,6 +109,7 @@ if (document.querySelector('.steps-page__slider')) {
 
 			},
 			1268: {
+				autoHeight: false,
 
 			},
 		},
